@@ -15,10 +15,14 @@ export default function Meaning(props){
                         <br />
                         <Example example={definition.example}/>
                     </p>                
-                </div>    
+                </div>         
            ) })}
-          <Synonyms synonyms={props.meaning.synonyms}/>   
-        </div>
+           <span>
+           {props.meaning.synonyms.map(function(synonym, index){
+                   return <Synonyms synonyms={synonym}/>   ;
+               })} 
+            </span>
+           </div>
         
     )
 }
