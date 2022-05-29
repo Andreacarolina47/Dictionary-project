@@ -1,4 +1,9 @@
 .App {
-  text-align: center;
+  text-align: center;  
+  font-family: 'Handlee', cursive;
 }
 
+.App h1{
+  padding-top: 20px;
+  font-weight: bold;
+}

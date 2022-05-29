@@ -1,12 +1,16 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
+import "./Results.css";
 
 export default function Results(props){
+    let word = props.results.word;
+    let capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
     if (props.results){
     return(
-    <div>
-    <h2>{props.results.word}</h2>
+    <div className="Results">
+    <section>
+    <h2>{capitalizedWord}</h2>
     {props.results.phonetics.map(function(phonetic, index){
         return(
             <div key={index}>
@@ -14,11 +18,12 @@ export default function Results(props){
             </div>
         )
     })}
+    </section>
     {props.results.meanings.map(function (meaning, index){
         return(
-            <div key={index}>
+            <section key={index}>
                 <Meaning meaning={meaning}/>
-            </div>
+            </section>
         )
     })}
     </div>);
