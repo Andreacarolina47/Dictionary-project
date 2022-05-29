@@ -4,9 +4,11 @@ import Example from "./Example";
 
 
 export default function Meaning(props){
+    let partOfSpeech = props.meaning.partOfSpeech;
+    let partOfSpeechCapitalized = partOfSpeech.charAt(0).toUpperCase() + partOfSpeech.slice(1)
     return(
         <div>
-            <h3>{props.meaning.partOfSpeech}</h3>
+            <h3>{partOfSpeechCapitalized}</h3>
             {props.meaning.definitions.map(function(definition, index){
                 return(
                 <div key={index}>
