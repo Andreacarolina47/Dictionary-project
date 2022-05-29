@@ -5,7 +5,7 @@ import Example from "./Example";
 
 export default function Meaning(props){
     let partOfSpeech = props.meaning.partOfSpeech;
-    let partOfSpeechCapitalized = partOfSpeech.charAt(0).toUpperCase() + partOfSpeech.slice(1)
+    let partOfSpeechCapitalized = partOfSpeech.charAt(0).toUpperCase() + partOfSpeech.slice(1);
     return(
         <div>
             <h3>{partOfSpeechCapitalized}</h3>
