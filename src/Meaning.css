@@ -1,15 +1,17 @@
 h3{
     text-transform: capitalize;
     font-weight: 900;
+    padding-bottom: 15px;
 }
 
 .definition{
     font-size: 20px;
     line-height: 1.5;
+    padding-bottom: 15px;
 }
 
 .example{
     font-size: 20px;
     color:#70757A;
+    padding-bottom: 15px;
 }
-

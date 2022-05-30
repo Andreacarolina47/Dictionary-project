@@ -4,7 +4,7 @@ import Results from "./Results";
 import './Dictionary.css';
 
 export default function Dictionary(){
-    const [word, setWord]= useState("Dictionary");
+    const [word, setWord]= useState("Summer");
     const[results, setResults]= useState(null);
     const [loaded, setLoaded]= useState(false);
 
