@@ -5,7 +5,7 @@ import './Dictionary.css';
 import Photos from "./Photos";
 
 export default function Dictionary(){
-    const [word, setWord]= useState("Summer");
+    const [word, setWord]= useState("yoga");
     const[results, setResults]= useState(null);
     const [loaded, setLoaded]= useState(false);
     const [photos, setPhotos]= useState(null);
