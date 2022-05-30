@@ -2,3 +2,14 @@
     text-align: left;
 
 }
+
+h2{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.phonetics{
+    font-size: 24px;
+    color:#757575 ;
+}

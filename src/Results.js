@@ -4,16 +4,14 @@ import Phonetics from "./Phonetics";
 import "./Results.css";
 
 export default function Results(props){
-    const word = props.results.word;
-    const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
     if (props.results){
     return(
     <div className="Results">
     <section>
-    <h2>{capitalizedWord}</h2>
+    <h2>{props.results.word}</h2>
     {props.results.phonetics.map(function(phonetic, index){
         return(
-            <div key={index}>
+            <div key={index} className="phonetics" >
                 <Phonetics phonetics={phonetic}/>
             </div>
         )
