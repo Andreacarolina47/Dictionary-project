@@ -4,8 +4,8 @@ import Phonetics from "./Phonetics";
 import "./Results.css";
 
 export default function Results(props){
-    let word = props.results.word;
-    let capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+    const word = props.results.word;
+    const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
     if (props.results){
     return(
     <div className="Results">
