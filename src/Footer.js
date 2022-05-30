@@ -17,7 +17,16 @@ export default function Footer(){
         
       >
         GitHub </a
+      > and hosted on {" "}
+      <a
+        href="https://spectacular-rabanadas-62c098.netlify.app/"
+        target="_blank"
+        rel="noreferrer"
+        
+      >
+        Netlify</a
       > 
+
     </footer>
     )
 }
